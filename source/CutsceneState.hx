@@ -48,7 +48,7 @@ class CutsceneState extends MusicBeatState
 		else
 			FlxG.camera.fade(FlxColor.BLACK, 0.8, true);
 			if (PlayState.storyWeek == 5)
-				video.playMP4(Paths.video('CutsceneFinal'), new StoryMenuState());
+				//video.playMP4(Paths.video('CutsceneFinal'), new StoryMenuState());
 	}
 	
 	override public function update(elapsed:Float):Void 
