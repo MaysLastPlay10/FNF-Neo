@@ -47,7 +47,7 @@ class CutsceneState extends MusicBeatState
 			endIt();
 		else
 			FlxG.camera.fade(FlxColor.BLACK, 0.8, true);
-			if (PlayState.storyWeek == 5)
+			//if (PlayState.storyWeek == 5)
 				//video.playMP4(Paths.video('CutsceneFinal'), new StoryMenuState());
 	}
 	
