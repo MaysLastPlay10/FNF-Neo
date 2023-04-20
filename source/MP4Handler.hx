@@ -1,5 +1,5 @@
 package;
-
+#if desktop
 import flixel.FlxG;
 import flixel.FlxState;
 import openfl.events.Event;
@@ -190,3 +190,4 @@ class MP4Handler
 		ns.close();
 	 */
 }
+#end
