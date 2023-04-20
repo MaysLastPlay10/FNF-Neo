@@ -9,7 +9,9 @@ import flixel.text.FlxText;
 
 import lime.app.Application;
 
+#if desktop
 import Discord.DiscordClient;
+#end
 
 import flixel.FlxSprite;
 
@@ -58,14 +60,14 @@ class Init extends FlxUIState
 			sys.FileSystem.createDirectory(Sys.getCwd() + "/assets/replays");
 
         FlxG.save.bind('save', 'neo');
-        
-        DiscordClient.initialize();
 
+        #if desktop
+        DiscordClient.initialize();
 		Application.current.onExit.add(function(exitCode) 
 		{
 			DiscordClient.shutdown();
 		});
-		
+		    #end
 		PlayerSettings.init();
 
 		KadeEngineData.initSave();
